@@ -66,3 +66,21 @@ footer {
     background: rgb(146, 40, 40);
     padding: var(--main-padding);
 }
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 3.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+
+    #sidebar {
+        display: none;
+    }
+}
